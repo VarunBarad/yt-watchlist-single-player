@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+  "name": "YT Watchlist Single Player",
+  "version": "1.0",
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/*"],
+      "js": ["index.js"]
+    }
+  ],
+  "icons": {
+    "48": "icons/play.svg",
+    "96": "icons/play.svg"
+  },
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "yt-watchlist-single-player@varunbarad.com"
+    }
+  }
+}
